@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import PostsService from '@/services/PostsService'
+import PostsService from '@/modules/posts/services/PostsService'
 export default {
   name: 'NewPost',
   data () {
