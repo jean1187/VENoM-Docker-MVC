@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const morgan = require('morgan')
 
-var posts = require('../routes/posts'); // Imports routes for the products
+var routes = require('../routes/routes'); // Imports routes for the products
 
 const app = express()
 app.use(morgan('combined'))
@@ -22,7 +22,7 @@ db.once("open", function(callback){
   console.log("Connection Succeeded");
 });
 
-app.use('/', posts);
+app.use('/', routes);
 
 
 

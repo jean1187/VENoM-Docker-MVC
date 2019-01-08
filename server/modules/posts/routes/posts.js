@@ -6,14 +6,14 @@ var post_controller = require('../controllers/posts');
 
 
 // a simple test url to check that all of our files are communicating correctly.
-router.get('/posts', post_controller.get_posts);
+router.get('/', post_controller.get_posts);
 // Post Endpoints
-router.post('/posts', post_controller.create_post);
+router.post('/', post_controller.create_post);
 // Fetch single post
-router.get('/post/:id', post_controller.get_single_post);
+router.get('/:id', post_controller.get_single_post);
 // Update a post
-router.put('/posts/:id', post_controller.update);
+router.put('/:id', post_controller.update);
 // Delete a post
-router.delete('/posts/:id', post_controller.delete);
+router.delete('/:id', post_controller.delete);
 
 module.exports = router;
