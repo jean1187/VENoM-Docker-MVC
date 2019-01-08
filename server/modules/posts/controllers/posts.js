@@ -37,8 +37,7 @@ exports.delete = async (req, res) => {
   })
 }
 
-
 /*
-exports.create_post = function (req, res) {
+exports.delete = async (req, res) => {
 };
 */
